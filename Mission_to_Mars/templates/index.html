@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <!-- Craigslist Listings -->
+    <div class="row" id="craiglist-listings">
+      <div class="col-md-12">
+          <h2 class='heading'><strong>Latest Mars News</strong></h2>
+        <h3 class="heading"><strong>{{data.new_title}}</strong></h3>
+        <h2>{{data.paragraph}}</h2>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h1><strong>Featured Mars Image</strong></h1>
+            <img src='/static/img/PIA17841_ip.jpg'>
+            <a href={{data.ft_img}}>{{data.ft_img}}
+            </a>
+        </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
